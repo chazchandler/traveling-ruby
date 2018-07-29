@@ -55,7 +55,8 @@ for F in *; do
 done
 run rpm --rebuilddb
 run yum install -y @development-tools gcc gcc-c++ wget sudo zlib-devel \
-	readline-devel ncurses-devel ccache
+	readline-devel ncurses-devel ccache m4 openssl-devel \
+	compat-libtermcap.x86_64 nss-softokn-freebl
 run mkdir -p /ccache
 echo
 
